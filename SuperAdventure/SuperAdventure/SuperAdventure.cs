@@ -20,6 +20,8 @@ namespace SuperAdventure
         {
             InitializeComponent();
 
+            Location location = new Location(1, "Home", "This is your house.");
+
             _player = new Player();
 
             _player.CurrentHitPoints = 10;
@@ -32,6 +34,11 @@ namespace SuperAdventure
             lblGold.Text = _player.Gold.ToString();
             lblExperience.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
+        }
+
+        private void SuperAdventure_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
